@@ -4,11 +4,15 @@ pipeline {
   
   stages {
     stage('build') {
-      sh 'echo Fake build'
+      steps {
+        sh 'echo Fake build'
+      }
     }
 
     stage('test') {
-      sh 'echo Fake test'
+      steps {
+        sh 'echo Fake test'
+      }
     }
   }
 }
